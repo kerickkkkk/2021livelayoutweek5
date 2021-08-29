@@ -6,106 +6,267 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Boostrap Index</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/style/bootstrap.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- 載入 bootstrap -->
+    <!-- <link rel="stylesheet" href="./assets/style/bootstrap.css"> -->
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+  <body class="d-flex">
+    <nav class="nav bg-light flex-column justify-content-between">
+      <div>
+        <h1 class="logo bg-cover-center my-6 ms-6" style="background-image: url(./assets/images/logo-ANSWER.svg);">
+          <a href="./index.html" class="d-block w-100 h-100">
+            <div class="visually-hidden">
+              ANSWER
+            </div>
+          </a>
+        </h1>
+        <ul>
+          <li>
+            <a href="#" class="nav__item">
+              <span class="material-icons me-4">
+                poll
+              </span>
+              <span class="fw-bold">
+                Dashboard
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav__item">
+              <span class="material-icons me-4">
+                  question_answer
+              </span>
+              <span class="fw-bold">
+                Question
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav__item">
+              <span class="material-icons me-4">
+                assignment
+              </span>
+              <span class="fw-bold">
+                Assignment
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav__item">
+              <span class="material-icons me-4">
+                video_library
+              </span>
+              <span class="fw-bold">
+                Course
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav__item">
+              <span class="material-icons me-4">
+                group
+                </span>
+              <span class="fw-bold">
+                Admin
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav__item">
+              <span class="material-icons me-4">
+                settings
+              </span>
+              <span class="fw-bold">
+                Settings
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div> 
+      <div class="userCard ps-6 pb-6">
+        <img src="./assets/images/andychen.jpeg" alt="Andy Chen" class="userCard__img">
+        <div class="userCard__body">
+          <div class="userCard__title">Andy Chen</div>
+          <div class="userCard__content">andy0401@mail.com</div>
         </div>
       </div>
     </nav>
 
     
-<div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<main class="container-fluid">
+  <header class="d-flex justify-content-between align-items-center p-6 mb-7">
+    <div class="d-flex align-items-center">
+      <h2 class="fw-bold fs-3 lh-sm me-5">Assignment</h2>
+      <select class="custom__select form-control fw-bold ms-5">
+        <option value="all">All Courses</option>
+      </select>
+    </div>
+    <div>
+      <a href="#">
+        <span class="material-icons me-4">
+          search
+        </span>
+      </a>
+      <a href="#">
+        <span class="material-icons">
+          notifications_active
+        </span>
+      </a>
+    </div>
+  </header>
+  <content class="row mx-4">
+    <aside class="col-md-4">
+      <div class="me-n-6">
+        <select class="custom__select form-control fw-bold">
+          <option value="4">All(4)</option>
+        </select>
+        <ul class="courseList border border-gray rounded">
+          <li class="courseList__item bg-light border-bottom border-gray p-3 d-flex">
+            <div>
+              <span class="fs-7 lh-lg">Chapter Assignment 2</span>
+              <h3 class="fw-bold fs-5">Please check this file…</h3>
+            </div>
+            <div class="ms-auto text-end">
+              <span class="fs-7 lh-lg">4 hrs ago</span>
+              <div class="fs-7 lh-lg text-secondary">Emily Wang</div>
+            </div>
+          </li>
+          <li class="courseList__item border-bottom border-gray p-3 d-flex">
+            <div>
+              <span class="fs-7 lh-lg">Chapter Assignment 1</span>
+              <h3 class="fw-bold fs-5">My Homework</h3>
+            </div>
+            <div class="ms-auto text-end">
+              <span class="fs-7 lh-lg">12 hrs ago</span>
+              <div class="fs-7 lh-lg text-secondary">David Xu</div>
+            </div>
+          </li>
+          <li class="courseList__item border-bottom border-gray p-3 d-flex">
+            <div>
+              <span class="fs-7 lh-lg">Final Assignment</span>
+              <h3 class="fw-bold fs-5">Have a problem with this…</h3>
+            </div>
+            <div class="ms-auto text-end">
+              <span class="fs-7 lh-lg">18 hrs ago</span>
+              <div class="fs-7 lh-lg text-secondary">Tony Wei</div>
+            </div>
+          </li>
+          <li class="courseList__item border-gray p-3 d-flex">
+            <div>
+              <span class="fs-7 lh-lg">Final Assignment</span>
+              <h3 class="fw-bold fs-5">Did I do it right?</h3>
+            </div>
+            <div class="ms-auto text-end">
+              <span class="fs-7 lh-lg">19 hrs ago</span>
+              <div class="fs-7 lh-lg text-secondary">Christina Lin</div>
+            </div>
+          </li>
+        </ul>
       </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+    </aside>
+    <div class="col-md-8">
+      <div class="ps-4">
+        <div class="text-end">
+          <span class="fs-7 text-secondary lh-lg my-1 d-inline-block">2 comments</span>
+        </div>
+        <div class="card border-gray mb-4">
+          <div class="card__header">
+            <div>
+              <div class="fs-7 lh-lg">Chapter Assignment 2 / HTML&CSS</div>
+              <h3 class="fw-bold fs-5">Please check this file for me, thanks!</h3>
+            </div>
+            <a href="#" class="material-icons fs-3">
+              more_vert
+            </a>
+          </div>
+          <ul class="card__body">
+            <li class="d-flex mb-4">
+              <div class="me-2">
+                <img src="./assets/images/emilywang.jpeg" alt="Emily Wang" 
+                class="rounded-circle card__img">
+              </div>
+              <div class="border-bottom border-gray pb-4">
+                  <h4 class="fw-bold fs-5 mb-1">Emily Wang</h4>
+                  <p class="text-secondary fs-7">
+                    10:38 AM (4 hours ago)
+                  </p>
+                  <p class="fs-6 mb-4">
+                    Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the 
+                    <mark>div</mark> is bigger than the height of the <mark>img</mark> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br>
+                    What is the gap or extra space below image?
+                  </p>
+                  <a href="#" class="btn btn-light border-gray py-3 ps-3 pe-4" download="HW-2-David.zip">
+                    <i class="material-icons me-2">
+                      attach_file
+                    </i>
+                    <span class="fw-bold">
+                      HW-2-David.zip
+                    </span>
+                  </a>
+              </div>
+            </li>
+            <li class="d-flex">
+              <img src="./assets/images/andychen.jpeg" alt="Andy Chen" 
+                class="rounded-circle card__img me-2">
+              <div>
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <h4 class="fw-bold fs-5 mb-1">Andy Chen (You)</h4>
+                      <p class="text-secondary fs-7">
+                        13:24 AM (1 hours ago)
+                      </p>
+                    </div>
+                    <div>
+                      <a href="#" class="me-5">
+                        <i class="material-icons">
+                          grade
+                        </i>
+                      </a>
+                      <a href="#" >
+                        <i class="material-icons">
+                          edit
+                        </i>
+                      </a>
+                    </div>
+                  </div>
+
+                  <p class="fs-6 mb-5">
+                    Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. 
+                  </p>
+                  <p class="mb-4">
+                    You can:
+                  </p>
+                  <ul class="list_style">
+                    <li class="ms-4">adjust the <mark>vertical-align</mark> of the image to position it elsewhere (e.g. the <mark>middle</mark> ) or 　</li>
+                    <li class="ms-4">change the <mark>display</mark> so it isn’t inline.</li>
+                  </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <footer class="d-flex justify-content-between align-items-center">
+          <div>
+            <a href="#" class="material-icons me-5">
+                chevron_left
+            </a>
+            <a href="#" class="material-icons">
+                chevron_right
+            </a>
+          </div>
+          <div>
+            <button class="btn btn-outline-primary fw-bold py-2 px-6 me-4">Mark as read</button>
+            <button class="btn btn-primary fw-bold py-2 px-6">Reply</button>
+          </div>
+        </footer>
       </div>
     </div>
-  </div>
-</div>
+  </content>
+</main>
 
 
-    <footer class="footer">
-      footer
-    </footer>
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
