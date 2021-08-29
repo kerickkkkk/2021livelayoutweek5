@@ -1,1 +1,11 @@
-@import './layout/_index.scss';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap');
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "../../../node_modules/bootstrap/scss/utilities";
+@import "./helpers/utilities";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+
+
+@import './config/_base.scss';
+@import './pages/_index.scss';

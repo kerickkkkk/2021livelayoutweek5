@@ -1,0 +1,29 @@
+body{
+  line-height: 1.5;
+  color: $dark;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+ul{
+  padding: 0;
+  list-style-type: none;
+}
+
+a{
+  color: $dark;
+  display: inline-block;
+  text-decoration: none;
+}
+mark, .mark{
+  font-family: 'Roboto Mono';
+  color:$primary;
+  background-color: $light;
+}
+i{
+  vertical-align: middle;
+}

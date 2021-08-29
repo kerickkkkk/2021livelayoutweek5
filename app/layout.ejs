@@ -6,55 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><%- title %></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <!-- 載入 bootstrap -->
-    <link rel="stylesheet" href="./assets/style/bootstrap.css">
+    <!-- <link rel="stylesheet" href="./assets/style/bootstrap.css"> -->
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+  <body class="d-flex">
+    <nav class="nav bg-light flex-column justify-content-between">
+      <div>
+        <h1 class="logo bg-cover-center my-6 ms-6" style="background-image: url(./assets/images/logo-ANSWER.svg);">
+          <a href="./index.html" class="d-block w-100 h-100">
+            <div class="visually-hidden">
+              ANSWER
+            </div>
+          </a>
+        </h1>
+        <ul>
+          <li>
+            <a href="#" class="nav__item">
+              <span class="material-icons me-4">
+                poll
+              </span>
+              <span class="fw-bold">
+                Dashboard
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav__item">
+              <span class="material-icons me-4">
+                  question_answer
+              </span>
+              <span class="fw-bold">
+                Question
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav__item">
+              <span class="material-icons me-4">
+                assignment
+              </span>
+              <span class="fw-bold">
+                Assignment
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav__item">
+              <span class="material-icons me-4">
+                video_library
+              </span>
+              <span class="fw-bold">
+                Course
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav__item">
+              <span class="material-icons me-4">
+                group
+                </span>
+              <span class="fw-bold">
+                Admin
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav__item">
+              <span class="material-icons me-4">
+                settings
+              </span>
+              <span class="fw-bold">
+                Settings
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div> 
+      <div class="userCard ps-6 pb-6">
+        <img src="./assets/images/andychen.jpeg" alt="Andy Chen" class="userCard__img">
+        <div class="userCard__body">
+          <div class="userCard__title">Andy Chen</div>
+          <div class="userCard__content">andy0401@mail.com</div>
         </div>
       </div>
     </nav>
 
     <%- contents %>
-
-    <footer class="footer">
-      footer
-    </footer>
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
