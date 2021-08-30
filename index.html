@@ -208,7 +208,7 @@
                   </a>
               </div>
             </li>
-            <li class="d-flex">
+            <li class="d-flex position-relative">
               <img src="./assets/images/andychen.jpeg" alt="Andy Chen" 
                 class="rounded-circle card__img me-2">
               <div>
@@ -244,6 +244,11 @@
                     <li class="ms-4">change the <mark>display</mark> so it isn’t inline.</li>
                   </ul>
               </div>
+              <textarea id="editor" placeholder="Reply an answer..."></textarea>
+              <div class="ck-editor__button">
+                <button class="btn btn-outline-primary fw-bold px-6 py-2" data-bs-toggle="collapse" data-bs-target=".ck">Cancel</button>
+                <button class="btn btn-primary fw-bold px-6 py-2">Reply</button>
+              </div>
             </li>
           </ul>
         </div>
@@ -258,7 +263,7 @@
           </div>
           <div>
             <button class="btn btn-outline-primary fw-bold py-2 px-6 me-4">Mark as read</button>
-            <button class="btn btn-primary fw-bold py-2 px-6">Reply</button>
+            <button class="btn btn-primary fw-bold py-2 px-6" data-bs-toggle="collapse" data-bs-target=".ck">Reply</button>
           </div>
         </footer>
       </div>
@@ -266,7 +271,7 @@
   </content>
 </main>
 
-
+<script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>

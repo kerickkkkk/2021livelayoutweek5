@@ -12779,4 +12779,31 @@ i {
   padding-left: 1rem;
 }
 
+.ck-editor {
+  position: absolute !important;
+  top: -2rem;
+  right: -1rem;
+  bottom: -2rem;
+  left: -1rem;
+}
+
+.ck-editor__main {
+  height: calc(100% + 19px);
+}
+
+.ck-editor__editable {
+  height: 100%;
+}
+
+.ck-editor__button {
+  display: none;
+  position: absolute;
+  bottom: -58px;
+  right: 0;
+}
+
+.ck-editor.show + .ck-editor__button {
+  display: block;
+}
+
 /*# sourceMappingURL=all.css.map */
