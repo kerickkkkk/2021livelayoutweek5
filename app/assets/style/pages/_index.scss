@@ -96,3 +96,26 @@
     };
   }
 }
+
+.ck-editor{
+  position: absolute !important;
+  top: -2rem;
+  right: -1rem;
+  bottom: -2rem;
+  left: -1rem;
+  &__main{
+    height: calc(100% + 19px);
+  }
+  &__editable{
+    height: 100%;
+  }
+  &__button{
+    display: none;
+    position: absolute;
+    bottom: -58px;
+    right: 0;
+  }
+  &.show + &__button{
+    display: block;
+  }
+}
