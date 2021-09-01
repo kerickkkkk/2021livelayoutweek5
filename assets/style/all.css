@@ -12679,26 +12679,6 @@ i {
   height: 40px;
 }
 
-.nav__item {
-  text-decoration: none;
-  display: block;
-  color: #212529;
-  border-left: 4px solid transparent;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 34px;
-}
-
-.nav__item > .material-icons {
-  vertical-align: middle;
-}
-
-.nav__item:hover {
-  color: #198754;
-  background-color: #e9ecef;
-  border-color: #198754;
-}
-
 .userCard {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12725,6 +12705,26 @@ i {
   font-size: 14px;
 }
 
+.nav__item {
+  text-decoration: none;
+  display: block;
+  color: #212529;
+  border-left: 4px solid transparent;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 34px;
+}
+
+.nav__item > .material-icons {
+  vertical-align: middle;
+}
+
+.nav__item:hover {
+  color: #198754;
+  background-color: #e9ecef;
+  border-color: #198754;
+}
+
 .custom__select {
   border: none;
   width: auto;
@@ -12742,11 +12742,11 @@ i {
   background-color: #f8f9fa;
 }
 
-.courseList__item {
+.list-group-item {
   cursor: pointer;
 }
 
-.courseList__item:hover {
+.list-group-item:hover {
   background-color: #f8f9fa;
 }
 
